@@ -1,0 +1,9 @@
+.page-content{
+    min-height: var(--max-width-400);
+    padding: calc(var(--default-padding) * 2);
+}
+@media (min-width: 1024px){
+    .page-content{
+        min-height: var(--max-width-800);
+    }
+}

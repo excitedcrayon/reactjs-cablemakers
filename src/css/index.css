@@ -14,9 +14,6 @@
 }
 
 :root {
-  --site-dark-blue: #004990;
-  --site-light-blue: #3F6488;
-  --site-red: #EE2F3C;
   color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -68,6 +65,10 @@ video,
 img {
   display: block;
   max-width: 100%;
+}
+li{
+  list-style: none;
+  list-style-type: none;
 }
 
 @media (prefers-color-scheme: light) {
