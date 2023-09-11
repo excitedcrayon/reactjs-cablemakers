@@ -21,6 +21,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background: var(--site-dark-blue);
+}
 
 html {
   scroll-behavior: smooth;
