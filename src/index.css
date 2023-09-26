@@ -51,6 +51,14 @@
   -webkit-text-size-adjust: 100%;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--site-dark-blue);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -101,6 +109,11 @@ img {
   user-select: none;
   display: block;
   max-width: 100%;
+}
+
+li {
+  list-style: none;
+  list-style-type: none;
 }
 
 @media (prefers-color-scheme: light) {

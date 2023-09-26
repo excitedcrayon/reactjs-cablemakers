@@ -10,6 +10,10 @@ import Services from './components/Services.jsx';
 import Projects from './components/Projects.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
+import './css/constants.css';
+import './css/header.css';
+import './css/content.css';
+import './css/footer.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

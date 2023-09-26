@@ -1,0 +1,4 @@
+footer{
+    padding: var(--default-padding);
+    background: var(--site-light-grey);
+}
