@@ -23,10 +23,27 @@ const Home = () => {
                     <div className="article-header-image locations-header-image">
                         <h1>Locations</h1>
                     </div>
-                    <p>We have branches located across Townsville, Brisbane and South Australalia.</p>
+                    <p>We have branches located across;</p>
+                    <ul className="located-across">
+                        <li title="Cablemakers Townsville">Townsville</li>
+                        <li title="Cablemakers Brisbane">Brisbane</li>
+                        <li title="Cablemakers South Australia">South Australia</li>
+                    </ul>
                     <p>Need any assistance, please don't hesitate to contact us.</p>
                     <div className="article-link">
                         <Link to='/contact' title="Contact Us" aria-label="Contact Us Link">Contact Us</Link>
+                    </div>
+                </article>
+                <article>
+                    <div className="article-image">
+                        <Link to='./red-devil-machine.pdf' title="Wire Stripper" target="_blank" className="article-image-link">
+                            <img src="./wire-stripper.jpg" alt="Wire Stripper" />
+                        </Link>
+                    </div>
+                </article>
+                <article>
+                    <div className="article-image">
+                        <img src="./old-drums.jpg" alt="Drum It In" />
                     </div>
                 </article>
             </div>
