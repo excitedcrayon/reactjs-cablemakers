@@ -1,6 +1,7 @@
 /* CONTENT */
 .page-wrapper {
     margin: 0 auto;
+    margin-bottom: calc(var(--default) * 5);
     padding: var(--default);
     width: 100%;
     max-width: var(--max-width-1300);

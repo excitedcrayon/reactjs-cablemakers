@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Product from "./Product";
+import ProductCard from "./common/ProductCard";
 import products from "../assets/file/products.json";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
         <div className="page-wrapper">
             <div className="product-grid">
                 { products.map((product) => (
-                    <Product key={product.id} product={product} />
+                    <ProductCard key={product.id} product={product} />
                 )) }
             </div>
             <div className="articles articles-grid">
