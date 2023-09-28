@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "name": "XLPE/PVC Single",
+        "image": "../../../product-images/xlpe-pvc.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Building Wire",
+        "image": "../../../product-images/building-wire.jpg"
+    },
+    {
+        "id": 3,
+        "name": "PVC SDI",
+        "image": "../../../product-images/pvc-sdi.jpg"
+    },
+    {
+        "id": 4,
+        "name": "PVC Flat",
+        "image": "../../../product-images/pvc-flat.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Orange Circ",
+        "image": "../../../product-images/orange-circ.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Circular Armoured",
+        "image": "../../../product-images/circular-armoured.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Control",
+        "image": "../../../product-images/control.jpg"
+    },
+    {
+        "id": 8,
+        "name": "XLPE Aerial",
+        "image": "../../../product-images/xlpe-aerial.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Flexible Control",
+        "image": "../../../product-images/flexible-control.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Instrumentation",
+        "image": "../../../product-images/instrumentation.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Fire",
+        "image": "../../../product-images/fire.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Fire Instrument",
+        "image": "../../../product-images/fire-instrument.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Security",
+        "image": "../../../product-images/security.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Speaker",
+        "image": "../../../product-images/speaker.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Glands",
+        "image": "../../../product-images/glands.jpg"
+    }
+]

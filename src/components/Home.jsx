@@ -1,8 +1,16 @@
 import { Link } from "react-router-dom";
+import Product from "./Product";
+import products from "../assets/file/products.json";
 
 const Home = () => {
+    
     return(
         <div className="page-wrapper">
+            <div className="product-grid">
+                { products.map((product) => (
+                    <Product key={product.id} product={product} />
+                )) }
+            </div>
             <div className="articles articles-grid">
                 <article>
                     <div className="article-header-image welcome-header-image">
