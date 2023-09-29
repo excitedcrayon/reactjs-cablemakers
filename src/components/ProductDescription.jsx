@@ -51,12 +51,24 @@ const ProductDescription = () => {
                                     <span dangerouslySetInnerHTML={{__html: multiLineString(data.characteristics.construction_characteristics)}} />
                                   </div>
                                 : ""}
+                            {data.characteristics.dimensional_characteristics != null 
+                                ? <div className="product-details-inner-row">
+                                    <strong>Dimensional Characteristics</strong>
+                                    <span dangerouslySetInnerHTML={{__html: multiLineString(data.characteristics.dimensional_characteristics)}} />
+                                  </div>
+                                : ""}                                
                             {data.characteristics.electrical_characteristics != null 
                                 ? <div className="product-details-inner-row">
                                     <strong>Electrical Characteristics</strong>
                                     <span dangerouslySetInnerHTML={{__html: multiLineString(data.characteristics.electrical_characteristics)}} />
                                   </div>
-                                : ""}                                
+                                : ""} 
+                            {data.characteristics.usage_characteristics != null 
+                                ? <div className="product-details-inner-row">
+                                    <strong>Usage Characteristics</strong>
+                                    <span dangerouslySetInnerHTML={{__html: multiLineString(data.characteristics.usage_characteristics)}} />
+                                  </div>
+                                : ""}                                                               
                         </div> : ""}
                     </div>
                 </div>
@@ -125,12 +137,30 @@ const ProductDescription = () => {
                             <strong>LSZH</strong>
                             <span>{data.cable_options.lszh}</span>
                         </div> : ""} 
+                        {data.cable_options.pairs != null 
+                        ? 
+                        <div className="product-attribute-row">
+                            <strong>Pairs</strong>
+                            <span>{data.cable_options.pairs}</span>
+                        </div> : ""}
+                        {data.cable_options.screened != null 
+                        ? 
+                        <div className="product-attribute-row">
+                            <strong>Screened</strong>
+                            <span>{data.cable_options.screened}</span>
+                        </div> : ""}
                         {data.cable_options.sheath != null 
                         ? 
                         <div className="product-attribute-row">
                             <strong>Sheath</strong>
                             <span>{data.cable_options.sheath}</span>
                         </div> : ""}
+                        {data.cable_options.swa != null 
+                        ? 
+                        <div className="product-attribute-row">
+                            <strong>SWA</strong>
+                            <span>{data.cable_options.swa}</span>
+                        </div> : ""}                        
                         {data.cable_options.termite != null 
                         ? 
                         <div className="product-attribute-row">
