@@ -4,25 +4,88 @@
         "link": "xlpe-pvc-single",
         "name": "XLPE/PVC Single",
         "image": "../../../product-images/xlpe-pvc.jpg",
-        "description": "Single core, 0.6/1kV X-90 insulated. PVC sheathed to AS/NZS 5000.1. Copper or aluminium conductors"
+        "description": "Single core, 0.6/1kV X-90 insulated.\nPVC sheathed to AS/NZS 5000.1.\nCopper or aluminium conductors.",
+        "standards": "National AS/NZS 5000; AS/NZS 5000.1; AS/NZS 5000.2",
+        "characteristics": {
+            "construction_characteristics": "Outer sheath: PVC (Polyvinyl chloride)\nInsulation: X-90",
+            "electrical_characteristics": "Reated Voltage Uo/U (Um): 0.6/1kV"
+        },
+        "cable_options": {
+            "size_mm": "16 | 25 | 35 | 50 | 70 | 95 | 120 | 150 | 185 | 240 | 300 | 400 | 500 | 630",
+            "sheath": "PVC",
+            "conductor": "Copper | Aluminium",
+            "cores": "1",
+            "colour": "Black | Orange",
+            "flexible": "Yes | No",
+            "lszh": "Yes | No",
+            "voltage": "0.6/1kV | 3.3/6.6kV | 6.35/11kV | 19/33kV",
+            "termite": "Yes | No"
+        }
     },
     {
         "id": 2,
         "link": "building-wire",
         "name": "Building Wire",
-        "image": "../../../product-images/building-wire.jpg"
+        "image": "../../../product-images/building-wire.jpg",
+        "description": "Single core.\n0.6/1kV V-90 insulated.\nAS/NZS 5000.1 (unsheathed).\nCopper conductors",
+        "note": "Other temperature grades subject to minimum production runs.",
+        "standards": "<strong>National</strong> AS/NZS 3560.1",
+        "characteristics": {
+            "construction_characteristics": "Insulation: V-90",
+            "electrical_characteristics": "Rated Voltage Uo/U (Um): 0.6/1 kV"
+        },
+        "cable_options": {
+            "size_mm": "0.5 | 1.5 | 2.5 | 4 | 6 | 10 | 16 | 25 | 35 | 50 | 70 | 95 | 120 | 150 | 185 | 240 | 300 | 400 | 500 | 630",
+            "sheath": "PVC",
+            "cores": "1",
+            "colour": "Red | Black | White | Orange | Earth | Grey | Purple | Pink | Green | Yellow | Brown | Blue",
+            "flexible": "Yes | No",
+            "length": "100m | 500m",
+            "lszh": "Yes | No",
+            "voltage": "0.6/1kV"
+        }
     },
     {
         "id": 3,
         "link": "pcv-sdi",
         "name": "PVC SDI",
-        "image": "../../../product-images/pvc-sdi.jpg"
+        "image": "../../../product-images/pvc-sdi.jpg",
+        "description": "Single core, V-90 insulated.\nPVC sheathed to AS/NZS 5000.\nCopper conductors\n.0 to 16mm2 450/750V to AS/NZS 5000.2.\n25 to 630mm2 0.6/1kV to AS/NZS 5000.1",
+        "characteristics": {
+            "construction_characteristics": "Outer Sheath: PVC (Polyvinyl chloride)\nInsulation: V-90"
+        },
+        "cable_options": {
+            "size_mm": "1 | 1.5 | 2.5 | 4 | 6 | 10 | 16 | 25 | 35 | 50 | 70 | 95 | 120 | 150 | 185 | 240 | 300 | 400 | 500 | 600",
+            "sheath": "PVC",
+            "core": "1",
+            "colour": "White/Black",
+            "flexible": "Yes | No",
+            "length": "100m Drum | 500m Drum",
+            "lszh": "Yes | No",
+            "voltage": "450/750V | 0.6/1kV"
+        }
     },
     {
         "id": 4,
         "link": "pvc-flat",
         "name": "PVC Flat",
-        "image": "../../../product-images/pvc-flat.jpg"
+        "image": "../../../product-images/pvc-flat.jpg",
+        "description": "Single core, V-90 insulated\n2 & 3 core flat\n450/750V V-90 insulated\nPVC sheathed to AS/NZS 5000.2\nCopper conductors",
+        "note": "*Red sheath 450/750V version available for fire alarm wiring systems.\nA 0.6/1kV red sheath version is also available: DACP05AA002.",
+        "standards": "National AS/NZS 5000.1",
+        "characteristics": {
+            "construction_characteristics": "Outer Sheath: PVC (Polyvinyl chloride)\nInsulation: V-90",
+            "electrical_characteristics": "Rated Voltage Uo/U (Um): 450 / 750 V"
+        },
+        "cable_options": {
+            "size_mm": "1 | 1.5 | 2.5 | 4 | 6 | 10 | 16",
+            "cores": "2 | 3",
+            "earth": "Yes | No",
+            "colour": "Black | White",
+            "length_range": "100m Drums | 500m Drums",
+            "lszh": "Yes | No",
+            "voltage": "450/750V"
+        }
     },
     {
         "id": 5,
