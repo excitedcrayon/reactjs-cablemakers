@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "icon": "../../../service-icon/icon-cable-lengths.png",
+        "name": "Ability to cut to size cable lengths"
+    },
+    {
+        "id": 2,
+        "icon": "../../../service-icon/icon-same-day-dispatch.png",
+        "name": "Same Day Dispatch"
+    },
+    {
+        "id": 3,
+        "icon": "../../../service-icon/icon-cable-distribution.png",
+        "name": "Customised Cable Distribution"
+    },
+    {
+        "id": 4,
+        "icon": "../../../service-icon/icon-direct-to-site.png",
+        "name": "Direct To Site"
+    },
+    {
+        "id": 5,
+        "icon": "../../../service-icon/icon-project-cable-management.png",
+        "name": "Project Cable Management"
+    },
+    {
+        "id": 6,
+        "icon": "../../../service-icon/icon-load-delivery.png",
+        "name": "Load Delivery"
+    },
+    {
+        "id": 7,
+        "icon": "../../../service-icon/icon-source-cable-configuration.png",
+        "name": "Source Any Cable Configuration"
+    }
+]

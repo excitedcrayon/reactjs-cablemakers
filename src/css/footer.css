@@ -131,9 +131,9 @@ footer {
 }
 
 .footer-socials .footer-social-icon a#facebook::before {
-    background: url('../assets/icon/icon-facebook.svg');
+    background: url('../../icons/icon-facebook.svg');
 }
 
 .footer-socials .footer-social-icon a#linkedin::before {
-    background: url('../assets/icon/icon-linkedin.svg');
+    background: url('../../icons/icon-linkedin.svg');
 }

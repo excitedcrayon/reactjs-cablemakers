@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from "./common/Header";
 import Footer from "./common/Footer";
+import ProductDescription from './common/ProductDescription.jsx';
 import About from './About';
 import Contact from './Contact.jsx';
 import FourOFour from './FourOFour.jsx';
 import Home from './Home.jsx';
 import PrivacyPolicy from './PrivacyPolicy.jsx';
-import ProductDescription from './ProductDescription.jsx';
 import Products from './Products.jsx';
 import Projects from './Projects.jsx';
 import Services from './Services.jsx';

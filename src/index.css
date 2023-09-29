@@ -53,6 +53,7 @@ a:after {
 }
 
 button {
+  user-select: none;
   -webkit-appearance: button;
   cursor: pointer;
   outline: none;

@@ -8,7 +8,7 @@ const Home = () => {
         <div className="page-wrapper">
             <div className="product-grid">
                 { products.map((product) => (
-                    <ProductCard key={product.id} product={product} />
+                    product.visible != false ? <ProductCard key={product.id} product={product} /> : ""
                 )) }
             </div>
             <div className="articles articles-grid">

@@ -17,7 +17,7 @@ const Footer = () => {
                         <h3>Products</h3>
                         <div className="footer-product-links">
                             { products.map((product) => (
-                                <FooterProductLink key={product.id} product={product}/>
+                                product.visible != false ?  <FooterProductLink key={product.id} product={product}/> : ""
                             ))}
                         </div>
                     </div>

@@ -236,21 +236,25 @@
         "image": "../../../product-images/fire.jpg",
         "description": "Fire Rated flexible single core products for use in mains and sub-mains applications. Rated to 0.6/1kV, 110°C and WS52W, this LSOH range of Fire Rated cables are the only flexible single core power cable which does not require glass-mica tapes, thus reducing installation time and eliminating the need for respirators and special gloves.",
         "benefits": "Unique polymer insulation hardens and protects in a fire\nEasy to handle and install; no tapes to remove\nHalogen free, low smoke, low toxic and corrosive emissions, flame retardant",
-        "fire_misc": "The Alsecure® Premium FRP cables are available in standard pair counts of 1, 2, 4, 6, 8, & 10, in conductor sizes 0.75mm2 and 1.5mm2.",
+        "misc": "The Alsecure® Premium FRP cables are available in standard pair counts of 1, 2, 4, 6, 8, & 10, in conductor sizes 0.75mm2 and 1.5mm2.",
         "application": "Fire resistant Power Circuit\nConsumer mains and Subs Mains\nLift sub mains\nPower Cable to fire pumps\nPower Cable for essential circuit",
+        "voltage": "0.6 / 1 KV\nContinuous Operating Temperature\n90°C\nColours\nInsulation - White(Natural)\nOuter Sheath - RED Only",
+        "continuous_operating_temperature": "90°C",
+        "colours": "Insulation - White(Natural)\nOuter Sheath - RED Only",
         "characteristics": {
-            "construction_characteristics": "Material of bedding: PVC filler\nOuter sheath: PVC (Polyvinyl chloride)\nOverall screen: Annealed tinned copper drain wire + aluminium/polyester tape\nInsulation: PVC\nConductor material: Annealed copper",
-            "dimensional_characteristics": "Number of earth cores: 7"
+            "construction_characteristics": "Outer sheath: HFS-110-TP\nInsulation: Ceramifiable®\nConductor material: Annealed copper\nType of conductor: Stranded flexible class 6",
+            "electrical_characteristics": "Rated Voltage Uo/U (Um): 0.6/1 kV",
+            "usage_characteristics": "Maximum operating temperature: 110°C"
         },
         "cable_options": {
-            "size_mm": "0.5 | 1.5",
-            "sheath": "PVC",
+            "size_mm": "1.5 | 2.5 | 4 | 6 | 10 | 16 | 25 | 35 | 50 | 70 | 95 | 120 | 150 | 185 | 240 | 300 | 400 | 500 | 630",
             "conductor": "Copper",
-            "pairs": "1 | 2 | 4 | 6 | 8 | 10 | 12 | 16 | 20 | 24 | 36 | 50",
-            "colour": "Black",
-            "screened": "S | I O/S | O/S | O/S Triple | S Triple",
+            "core": "1 | 2 | 3 | 4",
+            "earth": "Yes | No",
+            "colour": "Red | Black",
             "length": "",
-            "swa": "Yes | No",
+            "lszh": "Yes | No",
+            "voltage": "0.6/1kV | 3.3/6.6kV | 6.35/11kV | 12.7/22kV | 19/33kV",
             "termite": "Yes | No"
         }
     },
@@ -258,21 +262,66 @@
         "id": 12,
         "link": "fire-instrument",
         "name": "Fire Instrument",
-        "image": "../../../product-images/fire-instrument.jpg"
+        "image": "../../../product-images/fire-instrument.jpg",
+        "description": "Alsecure® Premium with INFIT™ Cermifiable® Instrumentation & Data  are a range of (HFFR) Halogen Free Flame Retardant multipair cable rated to WS51W under fire test standard AS/NZ 3013:2005. These new cables are the only Fire Rated multipair product available that do not require glass-mica tapes, thus reducing installation time and eliminating the need for respirators and special gloves.",
+        "benefits": "Easy to install\nNo Mica Tape\nNo Protective Equipment needed\nFire Resistant\nHalogen Free\nNon Toxic\nNo Heavy metals\nNo Corrosive Emissions\nLow Smoke\nLow Calorific Value\nFlexible",
+        "misc": "The Alsecure® Premium FRP cables are available in standard pair counts of 1, 2, 4, 6, 8, & 10, in conductor sizes 0.75mm2 and 1.5mm2.",
+        "standards": "National AS/NZS 3013",
+        "application": "Alarms\nPumps\nFans\nFire Services Systems\nInstrumentation Cables",
+        "voltage": "110 V AC / 150 V DC",
+        "continuous_operating_temperature": "90°C",
+        "colours": "Insulation - Natural/Black\nOuter Sheath - RED Only",
+        "characteristics": {
+            "construction_characteristics": "Outer sheath: HFS-90-TP\nOverall screen: Aluminium polyester laminate tape + Stranded tinned annealed copper drain wire\nInsulation: Ceramifiable®\nConductor material: Annealed copper\nType of conductor: Stranded",
+            "electrical_characteristics": "Rated Voltage Uo/U (Um): 110 VAC /150 VDC",
+            "usage_characteristics": "Maximum operating temperature: 90°C"
+        },
+        "cable_options": {
+            "size_mm": "0.75 | 1.5",
+            "conductor": "Copper",
+            "pairs": "1 | 2 | 4 | 6 | 8 | 10 | 12 | 16 | 20 | 24",
+            "colour": "Red",
+            "screened": "O/S",
+            "length": "",
+            "termite": "Yes | No"
+        }
     },
     {
         "id": 13,
         "link": "security",
         "name": "Security",
-        "image": "../../../product-images/security.jpg"
+        "image": "../../../product-images/security.jpg",
+        "description": "Sheath colour: BN Brown; GY Grey; WT White. \nPack size: 1 – 100m spool; B – 300m box; C – 250m spool (JSC.5xx6C only); 5 – 500m spool; B2 – 200m box (JSC.5xx6C only).\nInsulation colours: 4C – Red, Black, White, Blue; 6C – Red, Black, White, Blue, Green, Yellow. 8C – Red, Blue, White, Black, Yellow, Green, Violet, Brown.",
+        "characteristics": {
+            "construction_characteristics": "Sheath colour: Grey"
+        },
+        "cable_options": {
+            "size_mm": "0.2",
+            "conductor": "0.2",
+            "cores": "4 | 6 | 7 | 8 | 2 Pair | 4 Pair",
+            "colour": "Brown | Grey | White",
+            "screened": "Yes | No",
+            "length": "300m Drum | 100m Drums",
+            "lszh": "Yes | No"
+        }
     },
     {
         "id": 14,
         "link": "speaker",
         "name": "Speaker",
-        "image": "../../../product-images/speaker.jpg"
+        "image": "../../../product-images/speaker.jpg",
+        "misc": "When it comes to audio visual equipment, choosing the right cable is as important as choosing your theatre. The right connection will enhance image and sound quality, and allow your equipment to operate at its maximum potential. With an ever increasing amount of money being invested in screens and speakers, our range of cables is the vital link that can connect you with the home theatre quality you've dreamed of.",
+        "cable_options": {
+            "size_mm": "0.5 | 0.75 | 2 | 2.6",
+            "sheath": "Standard | Oxygen Free",
+            "conductor": "Copper",
+            "cores": "2 | 4",
+            "colour": "Red/Black | Clear",
+            "length": "100m Drums | 250m Drums | 300m Drums"
+        }
     },
     {
+        "visible": false,
         "id": 15,
         "link": "glands",
         "name": "Glands",

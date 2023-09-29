@@ -39,9 +39,27 @@ const ProductDescription = () => {
                         {data.description != null 
                         ? 
                         <div className="product-details-row description"><strong>Description</strong><span dangerouslySetInnerHTML={{__html: multiLineString(data.description)}} /></div> : ""}
+                        {data.benefits != null 
+                        ? 
+                        <div className="product-details-row benefits"><strong>Benefits</strong><span dangerouslySetInnerHTML={{__html: multiLineString(data.benefits)}} /></div> : ""}
+                        {data.misc != null 
+                        ? 
+                        <div className="product-details-single-row"><span dangerouslySetInnerHTML={{__html: multiLineString(data.misc)}} /></div> : ""}
                         {data.note != null 
                         ? 
-                        <div className="product-details-row note"><strong>Note</strong><span dangerouslySetInnerHTML={{__html: multiLineString(data.note)}} /></div> : ""}                        
+                        <div className="product-details-row note"><strong>Note</strong><span dangerouslySetInnerHTML={{__html: multiLineString(data.note)}} /></div> : ""}
+                        {data.application != null 
+                        ? 
+                        <div className="product-details-row application"><strong>Application</strong><span dangerouslySetInnerHTML={{__html: multiLineString(data.application)}} /></div> : ""}  
+                        {data.continuous_operating_temperature != null 
+                        ? 
+                        <div className="product-details-row continuos-operating-temparature"><strong>Continuous Operating Temperature</strong><span dangerouslySetInnerHTML={{__html: multiLineString(data.continuous_operating_temperature)}} /></div> : ""}
+                        {data.colours != null 
+                        ? 
+                        <div className="product-details-row colours"><strong>Colours</strong><span dangerouslySetInnerHTML={{__html: multiLineString(data.colours)}} /></div> : ""} 
+                        {data.voltage != null 
+                        ? 
+                        <div className="product-details-row voltage"><strong>Voltage</strong><span dangerouslySetInnerHTML={{__html: multiLineString(data.voltage)}} /></div> : ""}                  
                         {data.characteristics != null 
                         ? 
                         <div className="product-details-row characteristics"><strong>Characteristics</strong>
@@ -82,7 +100,7 @@ const ProductDescription = () => {
                         <div className="product-attribute-row">
                             <strong>Size Mm</strong>
                             <span>{data.cable_options.size_mm}</span>
-                        </div> : ""}  
+                        </div> : ""}
                         {data.cable_options.core != null 
                         ? 
                         <div className="product-attribute-row">
