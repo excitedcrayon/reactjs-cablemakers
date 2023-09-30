@@ -2,10 +2,13 @@ import React from "react";
 
 const ServiceCard = ({ service }) => {
 
-    console.log(service);
-
     return (
-        <h1>Test</h1>
+        <div className="service" data-name={service.name}>
+            <div className="service-image">
+                <img src={service.icon} alt={service.name} />
+            </div>
+            <div className="service-name"><p>{service.name}</p></div>
+        </div>
     )
 }
 
