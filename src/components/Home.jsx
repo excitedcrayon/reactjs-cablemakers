@@ -10,6 +10,7 @@ const Home = () => {
     return(
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
         <div className="page-wrapper">
+            <div className="page-banner"></div>
             <div className="product-grid">
                 { products.map((product) => (
                     product.visible != false ? <ProductCard key={product.id} product={product} /> : ""

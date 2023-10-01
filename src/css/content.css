@@ -292,11 +292,13 @@
     color: var(--site-dark-blue);
     content: attr(data-header-name);
     position: absolute;
+    top: -30%;
     width: 100%;
     height: 100%;
     left: 0;
     opacity: calc(var(--opacity-full) * 0.03);
     font-size: calc(var(--default) * 19);
+    transform: scale(0.8);
 }
 .page-wrapper .page-header::after{
     content: '';
