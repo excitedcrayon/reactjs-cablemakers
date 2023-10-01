@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import ProductCard from "./common/ProductCard";
 import products from "../assets/file/products.json";
+import { motion } from "framer-motion";
+import { pagevariant } from "../animation/PageVariant";
+import { pagetransition } from "../animation/PageTransition";
 
 const Home = () => {
     
     return(
+        <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
         <div className="page-wrapper">
             <div className="product-grid">
                 { products.map((product) => (
@@ -56,6 +60,7 @@ const Home = () => {
                 </article>
             </div>
         </div>
+        </motion.div>
     );
 }
 
