@@ -1,6 +1,8 @@
 footer {
     padding: var(--default-padding);
     background: var(--site-light-grey);
+    position: relative;
+    z-index: 100;
 }
 
 .top-footer .footer-content,

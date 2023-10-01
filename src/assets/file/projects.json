@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "image": "../../../project-images/townsville-hospital-expansion.png",
+        "title": "HV 11kV Townsville Hospital Expansion",
+        "date": "September 2012",
+        "year": "2012"
+    },
+    {
+        "id": 2,
+        "image": "../../../project-images/south-johnstone-mill-upgrade.png",
+        "title": "HV 22kV upgrade South Johnstone Mill Innisfail No 5 Mill",
+        "date": "November 2012",
+        "year": "2012"
+    },
+    {
+        "id": 3,
+        "image": "../../../project-images/townsville-hospital-expansion.png",
+        "title": "HV 11kV Townsville Hospital Expansion",
+        "date": "May 2013",
+        "year": "2013"
+    },
+    {
+        "id": 4,
+        "title": "HV 11kV Mt Isa Area Mine – Replacement Of Old Paper Lead HV",
+        "date": "July 2013",
+        "year": "2013"
+    },
+    {
+        "id": 5,
+        "title": "HV Wilmar Sugar Mills",
+        "subtitle": "Install Of New Substation",
+        "date": "August 2013",
+        "year": "2013"
+    },
+    {
+        "id": 6,
+        "title": "HV 11kV RAAF Base Townsville",
+        "subtitle": "Replacement of 2 old Pad Mount substations",
+        "date": "December 2013",
+        "year": "2013"
+    },
+    {
+        "id": 7,
+        "image": "../../../project-images/cloncurry-mine.png",
+        "title": "HV 22kV Cloncurry Mine",
+        "subtitle": "New substation for the mine",
+        "date": "March 2014",
+        "year": "2014"
+    },
+    {
+        "id": 8,
+        "image": "../../../project-images/mt-isa-new-power-plant.png",
+        "title": "HV 33kV Mount Isa - New Power Generation Plant",
+        "date": "May 2014",
+        "year": "2014"
+    },
+    {
+        "id": 9,
+        "image": "../../../project-images/wa-sandfire-resources.png",
+        "title": "HV 11kV NL WA Sandfire Resources",
+        "subtitle": "Upgrade of power supply to the Mine",
+        "date": "August 2015",
+        "year": "2015"
+    },
+    {
+        "id": 10,
+        "image": "../../../project-images/wilmar-sugar-hills.png",
+        "title": "HV 11kV Cable Upgrades For Wilmar Sugar mills",
+        "date": "December 2015",
+        "year": "2015"
+    }
+]
