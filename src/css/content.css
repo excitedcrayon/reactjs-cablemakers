@@ -485,3 +485,106 @@
     object-fit: cover;
     object-position: center;
 }
+/* ABOUT */
+.article-header-image.sub-header-image {
+    display: grid;
+    min-height: 200px;
+    place-items: center;
+    margin-bottom: var(--default);
+    position: relative;
+    z-index: 1;
+}
+.article-header-image.sub-header-image::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    z-index: -1;
+}
+.article-header-image.sub-header-image::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+.article-header-image.sub-header-image.cablemakers-hue::after{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(238, 47, 60, 0.3), rgba(63, 100, 136, 0.8), rgba(0,0,0,0.8));
+}
+.why-do-business::before{
+    background: url('../../business-with-us.jpeg');
+}
+.our-experience::before{
+    background: url('../../our-experience.png');
+}
+.article-header-image.sub-header-image h2{
+    position: relative;
+    z-index: 10;
+    color: var(--site-white);
+}
+.article-header-image.sub-header-image.cablemakers-hue h2 {
+    border: 1px solid var(--site-white);
+    padding: var(--medium) var(--default);
+    background: rgba(0,0,0,0.45);
+}
+.business-with-us-grid {
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--default);
+}
+.business-with-us-grid .business-card {
+    padding: calc(var(--medium) * 2);
+    min-height: 150px;
+    border: 1px solid var(--site-grey);
+    border-radius: var(--miniscule);
+    box-shadow: none;
+    position: relative;
+    z-index: 1;
+    transition: var(--transition-fastest) linear;
+}
+.business-with-us-grid .business-card:hover{
+    border: 1px solid var(--site-dark-grey);
+    box-shadow: 0 0 20px var(--site-dark-grey);
+}
+.business-with-us-grid .business-card::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    opacity: var(--opacity-none);
+    border-bottom: 3px solid var(--site-light-blue);
+    border-right: 3px solid var(--site-light-blue);
+    border-bottom-right-radius: var(--miniscule);
+    transition: var(--transition-fastest) linear;
+}
+.business-with-us-grid .business-card:hover::after{
+    width: calc(var(--max-width-100) / 3);
+    height: calc(var(--max-width-100) / 2);
+    opacity: var(--opacity-full);
+}
+@media (min-width: 650px){
+    .business-with-us-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 768px){
+    .business-with-us-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1024px){
+    .business-with-us-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

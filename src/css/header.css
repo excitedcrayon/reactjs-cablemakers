@@ -13,7 +13,6 @@ header {
     align-items: center;
     margin: 0 auto;
     padding: var(--medium);
-    border: 1px solid var(--site-grey);
     border-radius: var(--miniscule);
 }
 
