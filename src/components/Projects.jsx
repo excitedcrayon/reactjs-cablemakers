@@ -8,7 +8,7 @@ const Projects = () => {
     return(
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
             <div className="page-wrapper">
-                <div className="page-header services-header" data-header-name="Projects">
+                <div className="page-header projects-header" data-header-name="Projects">
                     <h1>Projects</h1>
                 </div>
                 <div className="articles">

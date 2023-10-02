@@ -6,7 +6,7 @@ const About = () => {
     return(
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
             <div className="page-wrapper">
-                <div className="page-header services-header" data-header-name="About">
+                <div className="page-header about-header" data-header-name="About">
                     <h1>About</h1>
                 </div>
                 <div className="articles">
