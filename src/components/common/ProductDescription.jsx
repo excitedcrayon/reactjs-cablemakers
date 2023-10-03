@@ -1,14 +1,11 @@
 import { useParams, useLocation } from "react-router-dom";
+import multiLineString from "../functions/GlobalFunctions";
 
 const ProductDescription = () => {
 
     const { link } = useParams();
     const product = useLocation();
     const data = product.state.product;
-
-    function multiLineString(string){
-        return string.replace(/\n/g,"<br />");
-    }
 
     return (
         <div className="page-wrapper">

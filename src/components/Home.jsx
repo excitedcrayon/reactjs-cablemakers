@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import ProductCard from "./common/ProductCard";
-import products from "../assets/file/products.json";
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
@@ -11,11 +9,6 @@ const Home = () => {
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
         <div className="page-wrapper">
             <div className="page-banner"></div>
-            <div className="product-grid">
-                { products.map((product) => (
-                    product.visible != false ? <ProductCard key={product.id} product={product} /> : ""
-                )) }
-            </div>
             <div className="articles articles-grid">
                 <article>
                     <div className="article-header-image welcome-header-image">

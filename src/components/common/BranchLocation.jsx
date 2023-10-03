@@ -1,3 +1,5 @@
+import multiLineString from "../functions/GlobalFunctions";
+
 const BranchLocation = ({ branch }) => {
 
     const embeddedMaps = [
@@ -6,10 +8,6 @@ const BranchLocation = ({ branch }) => {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.6259273652263!2d153.072026!3d-27.4497664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91590d12b9a7d3%3A0xc4f9c7ff4a0105b7!2s340%20Thynne%20Rd%2C%20Morningside%20QLD%204170!5e0!3m2!1sen!2sau!4v1696306676788!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.704994178464!2d138.6370828!3d-34.8133631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0b69d317881c3%3A0x910c1a9d453ba2ad!2s33%20Maxwell%20Rd%2C%20Pooraka%20SA%205095!5e0!3m2!1sen!2sau!4v1696306702878!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
     ];
-
-    function multiLineString(string){
-        return string.replace(/\n/g,"<br />");
-    }
 
     return(
         <div className="branch-locations">
