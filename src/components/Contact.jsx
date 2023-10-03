@@ -24,24 +24,36 @@ const Contact = () => {
     }
 
     const handleSubmit = (e) => {
+
         e.preventDefault();
+
+        let formValid = true;
+
         const validationErrors = {}
+
         if(!formData.name.trim()){
             validationErrors.name = "Name is required";
-        }
+            formValid = false;
+        }else{ validationErrors.name = ""; }
+
         if(!formData.contact.trim()){
             validationErrors.contact = "Contact number is required";
-        }
+            formValid = false;
+        }else{ validationErrors.contact = ""; }
+
         if(!formData.email.trim()){
             validationErrors.email = "Email is required";
-        }
+            formValid = false;
+        }else { validationErrors.email = ""; }
+
         if(!formData.enquiry.trim()){
             validationErrors.enquiry = "Your enquiry/comment is required";
-        }
+            formValid = false;
+        }else{ validationErrors.enquiry = ""; }
 
         setErrors(validationErrors);
 
-        if(Object.keys(validationErrors).length === 0){
+        if(formValid){
             console.log('Form submitted');
         }
     }
@@ -64,27 +76,27 @@ const Contact = () => {
                                 </div>
                                 <div className="form-row">
                                     <label>Name <sup>*</sup></label>
-                                    <input type="text" aria-label="Name Field" name="name" onChange={handleChange}/>
-                                    {error.name && <span>{error.name}</span>}
+                                    <input type="text" aria-label="Name Field" name="name" placeholder="Cable Makers" onChange={handleChange}/>
+                                    {error.name && <span className="form-error">{error.name}</span>}
                                 </div>
                                 <div className="form-row">
                                     <label>Company</label>
-                                    <input type="text" aria-label="Company Name Field" name="company" onChange={handleChange}/>
+                                    <input type="text" aria-label="Company Name Field" name="company" placeholder="My Company Pty Ltd" onChange={handleChange}/>
                                 </div>
                                 <div className="form-row">
                                     <label>Contact Number <sup>*</sup></label>
-                                    <input type="text" aria-label="Contact Number Field" name="contact" onChange={handleChange}/>
-                                    {error.contact && <span>{error.contact}</span>}
+                                    <input type="text" aria-label="Contact Number Field" name="contact" placeholder="+61 4xx xxx xxx" onChange={handleChange}/>
+                                    {error.contact && <span className="form-error">{error.contact}</span>}
                                 </div>
                                 <div className="form-row">
                                     <label>Email <sup>*</sup></label>
-                                    <input type="text" aria-label="Email Field" name="email" onChange={handleChange}/>
-                                    {error.email && <span>{error.email}</span>}
+                                    <input type="text" aria-label="Email Field" name="email" placeholder="desk@cablemakers.com.au" onChange={handleChange}/>
+                                    {error.email && <span className="form-error">{error.email}</span>}
                                 </div>
                                 <div className="form-row">
                                     <label>Enquiry/Comment <sup>*</sup></label>
-                                    <textarea name="enquiry" aria-label="Enquriry/Comment Text Area" cols="30" rows="10" onChange={handleChange}></textarea>
-                                    {error.enquiry && <span>{error.enquiry}</span>}
+                                    <textarea name="enquiry" aria-label="Enquriry/Comment Text Area" cols="30" rows="10" placeholder="Do you have any insulated cables?" onChange={handleChange}></textarea>
+                                    {error.enquiry && <span className="form-error">{error.enquiry}</span>}
                                 </div>
                                 <div className="form-submit">
                                     <button type="submit" title="Submit Form" aria-label="Submit button for the contact form">Submit</button>

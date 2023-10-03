@@ -755,6 +755,12 @@
     resize: none;
 }
 
+.contact-form .form-row .form-error{
+    color: var(--site-red);
+    font-size: calc(var(--medium) * 1.75);
+    margin: var(--miniscule) 0;
+}
+
 .contact-form .form-submit {
     display: flex;
     flex-wrap: wrap;
