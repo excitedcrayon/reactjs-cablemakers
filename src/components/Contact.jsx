@@ -11,8 +11,11 @@ const Contact = () => {
                 <div className="page-header contact-header" data-header-name="Contact">
                     <h1>Contact</h1>
                 </div>
-                <div className="articles article-flex-half">
+                <div className="articles contact-article-flex-half">
                     <article className="contact-form-article">
+                        <div className="article-header-image sub-header-image contact-us cablemakers-hue">
+                            <h2>Send Us A Message</h2>
+                        </div>
                         <div className="contact-form">
                             <form autoComplete="on">
                                 <div className="form-required">
@@ -38,10 +41,13 @@ const Contact = () => {
                                     <label>Enquiry/Comment <sup>*</sup></label>
                                     <textarea name="enquiry_comment" aria-label="Enquriry/Comment Text Area" cols="30" rows="10"></textarea>
                                 </div>
+                                <div className="form-submit">
+                                    <button type="submit" title="Submit Form" aria-label="Submit button for the contact form">Submit</button>
+                                </div>
                             </form>
                         </div>
                     </article>
-                    <article className="contact-maps">
+                    <article className="contact-maps-article">
                         <div className="contact-locations">
                             {branchesData.map((branch) => {
                                 return(

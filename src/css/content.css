@@ -643,36 +643,154 @@
 }
 
 /* CONTACT */
-.article-flex-half {
-    display: grid;
+.contact-article-flex-half {
+    /* display: grid;
     grid-template-columns: repeat(1, 1fr);
-    place-items: center;
+    place-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.article-flex-half .contact-form-article {
+.contact-article-flex-half .contact-form-article,
+.contact-article-flex-half .contact-maps-article {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.contact-article-flex-half .contact-form-article {
     order: 2;
 }
 
-.article-flex-half .contact-form {
+.contact-article-flex-half .contact-form-article .contact-article-flex-half .contact-maps-article {
     order: 1;
 }
 
-@media (min-width: 650px) {
-    .article-flex-half {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.contact-article-flex-half .contact-form-article .contact-us::before {
+    background: url('../../contact.jpg');
+}
 
-    .article-flex-half .contact-form-article,
-    .article-flex-half .contact-form {
-        order: unset;
+.contact-article-flex-half .contact-maps-article .contact-locations {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--default);
+}
+
+@media (min-width: 768px) {
+    .contact-article-flex-half .contact-maps-article .contact-locations {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
+@media (min-width: 1024px) {
+    .contact-article-flex-half {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-article-flex-half .contact-form-article,
+    .contact-article-flex-half .contact-maps-article {
+        order: unset;
+        margin: 0 var(--default);
+    }
+
+    .contact-article-flex-half .contact-form-article {
+        max-width: 38%;
+    }
+
+    .contact-article-flex-half .contact-maps-article {
+        max-width: 55%;
+    }
+}
+
+.contact-form {
+    width: 100%;
+    padding: var(--medium);
+}
+
+.contact-form form {
+    width: 100%;
+    max-width: 100%;
+}
+
+.contact-form .form-required sup {
+    position: relative;
+    top: var(--miniscule);
+    color: var(--site-red);
+}
+
+.contact-form .form-row {
+    display: flex;
+    flex-direction: column;
+    margin: var(--medium) 0;
+}
+
+.contact-form .form-row label {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-form .form-row label sup {
+    position: absolute;
+    color: var(--site-red);
+    top: 50%;
+    margin-left: var(--miniscule);
+    transform: translateY(-50%);
+}
+
+.contact-form .form-row input[type="text"],
+.contact-form .form-row textarea {
+    padding: var(--medium);
+    border: 1px solid var(--site-dark-grey);
+    border-radius: var(--miniscule);
+}
+
+.contact-form .form-row input[type="text"]:focus,
+.contact-form .form-row textarea:focus {
+    border: 1px solid var(--site-light-blue);
+    background: var(--site-grey);
+}
+
+.contact-form .form-row textarea {
+    resize: none;
+}
+
+.contact-form .form-submit {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-form .form-submit button {
+    flex: 1 0 auto;
+    width: 100%;
+    text-align: center;
+    color: var(--site-white);
+    font-size: var(--default);
+    border-radius: var(--miniscule);
+    padding: calc(var(--medium) * 1.5) calc(var(--default) * 2);
+    background: var(--site-light-blue);
+    transition: var(--transition-fastest) ease;
+}
+
+.contact-form .form-submit button:hover {
+    background: var(--site-red);
+}
+
+@media (min-width: 768px) {
+    .contact-form .form-submit button {
+        flex: unset;
+        width: initial;
+    }
+}
 
 .branch-locations {
     border-radius: var(--miniscule);
     border: 1px solid var(--site-grey);
     margin-bottom: calc(var(--default) * 1.5);
+}
+
+.branch-locations:hover {
+    box-shadow: 0 0 20px var(--site-dark-grey);
 }
 
 .branch-locations .branch {
@@ -701,6 +819,10 @@
     margin-left: calc(var(--max-width-100) / 4);
 }
 
+.branch-locations .branch-name {
+    padding: calc(var(--max-width-100) / 6);
+}
+
 .branch-locations .branch .branch-map {
     overflow: hidden;
     border: 1px solid var(--site-dark-grey);
@@ -709,6 +831,7 @@
 
 .branch-locations .branch .branch-map iframe {
     width: 100%;
+    max-width: 100%;
     max-height: var(--max-width-100);
 }
 
@@ -716,5 +839,3 @@
     font-weight: 600;
     color: var(--site-dark-blue);
 }
-
-.branch-locations .branch-address {}
