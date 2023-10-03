@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "branch_name": "Cablemakers Queensland",
+        "branch_address": "44 - 146 Webb Drive\nBohle\nTownsville QLD 4818",
+        "branch_phone": "(07) 4774 5933",
+        "branch_fax": "(07) 4774 4399",
+        "branch_email": "townsville@cablemakers.com.au",
+        "branch_operation_hours": "Monday - Friday | 7:30am to 4:00pm"
+    },
+    {
+        "id": 2,
+        "branch_name": "Cablemakers Brisbane",
+        "branch_address": "340 Thynne Road\nMorningside\nBrisbane QLD 4170",
+        "branch_phone": "(07) 3177 1733",
+        "branch_email": "brisbane@cablemakers.com.au",
+        "branch_operation_hours": "Monday - Friday | 7:30am to 4:00pm"
+    },
+    {
+        "id": 3,
+        "branch_name": "Cablemakers Pooraka",
+        "branch_address": "33 Maxwell Road\nPooraka\nSA 5095",
+        "branch_phone": "(08) 8162 9383",
+        "branch_fax": "(08) 8162 9387",
+        "branch_email": "adelaide@cablemakers.com.au",
+        "branch_operation_hours": "Monday - Friday | 7:30am to 4:00pm"
+    }
+]
