@@ -1,3 +1,5 @@
+import businessData from "../assets/file/businesses.json";
+import BusinessCard from "./common/BusinessCard";
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
@@ -20,19 +22,11 @@ const About = () => {
                             <h2>Why Do Business With Us?</h2>
                         </div>
                         <div className="business-with-us-grid">
-                            <div className="business-card"><span>Supply all market sectors including mining, industrial, commercial, power distribution, domestic and project</span></div>
-                            <div className="business-card"><span>Wide range and depth of products in stock</span></div>
-                            <div className="business-card"><span>Professional, experienced, friendly staff</span></div>
-                            <div className="business-card"><span>Cable handling capabilities up to 7 Tonnes</span></div>
-                            <div className="business-card"><span>On site cutting capabilities for HV, MV and LV cables</span></div>
-                            <div className="business-card"><span>Same day service</span></div>
-                            <div className="business-card"><span>Strong working relationships with major cable manufacturers</span></div>
-                            <div className="business-card"><span>Bulk buying power and competitive pricing</span></div>
-                            <div className="business-card"><span>Custom cut-to-length service and waste management</span></div>
-                            <div className="business-card"><span>Scheduled deliveries to multiple sites</span></div>
-                            <div className="business-card"><span>Quality cable products that meet the strictest safety standards</span></div>
-                            <div className="business-card"><span>Sophisticated supply chain solutions and innovative warehousing solutions</span></div>
-                            <div className="business-card"><span>Project management solutions</span></div>
+                            {businessData.map((business) => {
+                                return(
+                                    <BusinessCard key={business.id} business={business}/>
+                                )
+                            })}
                         </div>
                     </article>
                     <article>
