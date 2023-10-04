@@ -1,7 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import Breadcrumb from "../common/Breadcrumb";
 
 const Header = () => {
+
+    const location = useLocation();
+    const urls = location.pathname.split("/");
+
     return (
+        <>
         <header>
             <div className="header-content">
                 <div className="header-logo">
@@ -22,6 +28,16 @@ const Header = () => {
                 </nav>
             </div>
         </header>
+        <div className="breadcrumb">
+            <nav>
+                { urls.map((url, index) => {
+                    return(
+                        <Breadcrumb key={index} url={url} index={index}/>
+                    )
+                })}
+            </nav>
+        </div>
+        </>
     );
 };
 
