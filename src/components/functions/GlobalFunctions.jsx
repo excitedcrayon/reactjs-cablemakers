@@ -1,5 +1,5 @@
-function multiLineString(string){
+const multiLineString = (string) => {
     return string.replace(/\n/g,"<br />");
 }
 
-export default multiLineString;
+export default multiLineString

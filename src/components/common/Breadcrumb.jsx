@@ -1,19 +1,34 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
-const Breadcrumb = ({ url, index }) => {
+const Breadcrumb = () => {
 
-    console.log(url, index);
+    const location = useLocation();
+    const pathname = location.pathname.split("/");
+    let home, secondLink, thirdLink, lastLink;
 
-    const firstLink = (index == 0) ? url : '';
-    const secondLink = (index == 1) ? `/${url}` : '';
-    const thirdLink = (index == 2) ? `${secondLink}` : '';
+    for(let i = 0; i < pathname.length; i++){
+        if(i == 0){
+            home = pathname[i];
+        }
+        if(i == 1){
+            secondLink = pathname[i];
+        }
+        if(i == 2){
+            thirdLink = pathname[i];
+        }
+    }
+
+    lastLink = `${secondLink}/${thirdLink}`;
 
     return(
-       <>
-        {index == 0 && <NavLink to={firstLink}>Home</NavLink>}
-        {index == 1 && <NavLink to={secondLink}>{url}</NavLink>}
-        {index == 2 && <NavLink to={thirdLink}>{url}</NavLink>}
-       </>
+        <div className="breadcrumb">
+            <>
+            {/* check if second link exists or else hide Home link when on Homepage */}
+            {pathname[1].length > 0 ? <NavLink to={home}>Home</NavLink> : ''} 
+            {secondLink != undefined && <NavLink to={secondLink}>{secondLink}</NavLink>}
+            {thirdLink != undefined && <NavLink to={lastLink}>{thirdLink}</NavLink>}
+            </>
+        </div>
     )
 }
 

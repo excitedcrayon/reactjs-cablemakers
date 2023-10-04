@@ -1,5 +1,5 @@
 import { useParams, useLocation } from "react-router-dom";
-import multiLineString from "../functions/GlobalFunctions";
+import  multiLineString from "../functions/GlobalFunctions";
 
 const ProductDescription = () => {
 
