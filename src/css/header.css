@@ -85,8 +85,9 @@ header {
 }
 
 .header-content li a {
+    user-select: none;
     padding: var(--miniscule) var(--medium);
-    border-radius: var(--miniscule);
+    /* border-radius: var(--miniscule); */
     transition: var(--transition-fast) ease;
 }
 
@@ -95,8 +96,9 @@ header {
 }
 
 .header-content li a.active-link {
-    color: var(--site-white);
-    background: linear-gradient(var(--site-dark-blue), var(--site-red));
+    color: var(--site-red);
+    /* background: linear-gradient(var(--site-dark-blue), var(--site-red)); */
+    border-bottom: 2px solid var(--site-red);
 }
 /* BREADCRUMB */
 .breadcrumb {

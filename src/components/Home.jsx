@@ -1,14 +1,27 @@
 import { Link } from "react-router-dom";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import { OrbitControls } from "@react-three/drei"; 
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
+import Cablemakers from "../assets/models/Cablemakers";
 
 const Home = () => {
     
     return(
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
         <div className="page-wrapper">
-            <div className="page-banner"></div>
+            <div className="page-banner" data-title="Use your mouse and rotate the 3D Text">
+                <Canvas style={{ background: "#FFF" }} camera={{ fov: 10 }}>
+                    <directionalLight position={[10,15,10]} intensity={2} castShadow />
+                    <directionalLight position={[-10,-15,-5]} intensity={1} />
+                    <OrbitControls />
+                    <Suspense fallback={ null }>
+                        <Cablemakers />
+                    </Suspense>
+                </Canvas>
+            </div>
             <div className="articles articles-grid">
                 <article>
                     <div className="article-header-image welcome-header-image">
@@ -41,14 +54,14 @@ const Home = () => {
                     </div>
                 </article>
                 <article>
-                    <div className="article-image">
+                    <div className="article-image no-margin">
                         <Link to='./red-devil-machine.pdf' title="Wire Stripper" target="_blank" className="article-image-link">
                             <img src="./wire-stripper.jpg" alt="Wire Stripper" />
                         </Link>
                     </div>
                 </article>
                 <article>
-                    <div className="article-image">
+                    <div className="article-image no-margin">
                         <img src="./old-drums.jpg" alt="Drum It In" />
                     </div>
                 </article>
