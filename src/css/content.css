@@ -1,3 +1,12 @@
+/* BODY */
+body{
+    transition: var(--transition-fast) ease;
+}
+body.halt-body{
+    max-height: 100vh;
+    overflow: hidden;
+}
+
 /* CONTENT */
 .page-wrapper {
     margin: 0 auto;
@@ -908,7 +917,14 @@
 .page-product-description-data .product-details-row span{
     flex: 1 0 auto;
     width: 100%;
-    max-width: 50%;
+    /* max-width: 50%; */
+}
+
+@media (min-width: 380px){
+    .page-product-description-data .product-details-row strong,
+    .page-product-description-data .product-details-row span{
+        max-width: 50%;
+    }
 }
 
 .page-product-description-data .product-details-row.characteristics strong,

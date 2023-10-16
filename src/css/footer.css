@@ -4,7 +4,23 @@ footer {
     position: relative;
     z-index: 100;
 }
-
+footer a{
+    position: relative;
+    text-indent: 0;
+    transition: var(--transition-fast) linear;
+}
+footer a::before{
+    content: '-';
+    display: inline-block;
+    margin: 0 var(--miniscule);
+}
+@media (min-width: 1024px){
+    footer a:hover{
+        font-weight: 400;
+        color: var(--site-red);
+        text-indent: var(--miniscule);
+    }
+}
 .top-footer .footer-content,
 .bottom-footer .footer-content {
     margin: 0 auto;
@@ -43,12 +59,19 @@ footer {
         text-align: center;
     }
 }
-
+.top-footer .footer-links{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
 .top-footer .footer-product-links {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
-
+@media (min-width: 380px){
+    .top-footer .footer-product-links{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
 .top-footer .footer-content>div>h3 {
     font-weight: 500;
     padding: var(--miniscule) 0;
