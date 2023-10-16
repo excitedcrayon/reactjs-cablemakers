@@ -5,7 +5,7 @@ The current cablemakers site was converted from MODx to ReactJS
 <img src="./readme_assets/old_cablemakers.png" alt="Old Cablemakers">
 
 ### ReactJS Version
-<img src="./readme_assets/ew_cablemakers.png" alt="New Cablemakers">
+<img src="./readme_assets/new_cablemakers.png" alt="New Cablemakers">
 
 ### Dependencies
 - Spline Design For 3D Text
