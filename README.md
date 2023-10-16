@@ -11,3 +11,4 @@ The current cablemakers site was converted from MODx to ReactJS
 - Spline Design For 3D Text
 - React Three Fiber and React Drei to render 3D object
 - gltfjsx to convert .gltf file from Spline to React Component
+- Framer Motion for animations

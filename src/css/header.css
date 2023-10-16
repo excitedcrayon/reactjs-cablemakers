@@ -142,11 +142,11 @@ header {
     }
 }
 .header-logo #logo span:nth-child(1) {
-    color: var(--site-red);
+    color: var(--site-dark-blue);
 }
 
 .header-logo #logo span:nth-child(2) {
-    color: var(--site-dark-blue);
+    color: var(--site-red);
 }
 .header-content li a {
     user-select: none;
