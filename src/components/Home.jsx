@@ -12,7 +12,7 @@ const Home = () => {
     return(
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
         <div className="page-wrapper">
-            <div className="page-banner" data-title="Use your mouse and rotate the 3D Text">
+            <div className="page-banner" data-title="Use your mouse to click and rotate the 3D Text">
                 <Canvas style={{ background: "#FFF" }} camera={{ fov: 10 }}>
                     <directionalLight position={[10,15,10]} intensity={2} castShadow />
                     <directionalLight position={[-10,-15,-5]} intensity={1} />
