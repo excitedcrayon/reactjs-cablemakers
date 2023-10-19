@@ -7,8 +7,11 @@ import BranchLocation from "./common/BranchLocation";
 
 const Contact = () => {
 
+    let contactURL = 'https://archived-forms.bgwgroup.com.au/cablemakers/contact.php';
+
     const [formData, setFormData] = useState({
         name: '',
+        company: '',
         contact: '',
         email: '',
         enquiry: '',
@@ -54,7 +57,20 @@ const Contact = () => {
         setErrors(validationErrors);
 
         if(formValid){
-            console.log('Form submitted');
+
+            let form = new FormData();
+            form.append('name', formData.name);
+            form.append('company', formData.company);
+            form.append('contact', formData.contact);
+            form.append('email', formData.email);
+            form.append('enquiry', formData.enquiry);
+
+            fetch(contactURL, { 
+                method: 'POST',
+                body: form,
+            }).then((req) => req.json())
+            .then((res) => console.log(res))
+            .catch((err) => console.log(err));
         }
     }
 
