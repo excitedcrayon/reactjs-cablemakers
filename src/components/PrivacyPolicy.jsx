@@ -35,7 +35,7 @@ const PrivacyPolicy = () => {
                             <h2>How we use collected information</h2>
                         </div>
                         <p>Cablemakers may collect and use Users personal information for the following purposes:</p>
-                        <ul>
+                        <ul className="article-list">
                             <li><div className="italic"><span>To improve customer service</span></div>Information you provide helps us respond to your customer service requests and support needs more efficiently.</li>
                             <li><div className="italic"><span>To personalize user experience</span></div>We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.</li>
                             <li><div className="italic"><span>To improve our Site</span></div>We may use feedback you provide to improve our products and services.</li>
@@ -80,7 +80,7 @@ const PrivacyPolicy = () => {
                         <div className="article-header">
                             <h2>Contacting us</h2>
                         </div>
-                        <div className="article-link">
+                        <div className="article-link padding-top-bottom">
                             <Link to='/contact' title="Contact Us" aria-label="Contact Us Link">Contact Us</Link>
                         </div>
                     </article>

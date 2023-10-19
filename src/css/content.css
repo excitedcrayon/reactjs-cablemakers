@@ -120,7 +120,28 @@ body.halt-body{
         grid-template-columns: repeat(5, 1fr) !important;
     }
 }
-
+.page-wrapper .article-header h2 {
+    color: var(--site-dark-blue);
+    text-transform: capitalize;
+    margin-bottom: var(--default);
+}
+.page-wrapper article .italic span{
+    color: var(--site-red);
+}
+.page-wrapper article ul,
+.page-wrapper article ol{
+    padding-bottom: calc(5 * var(--medium));
+}
+.page-wrapper article ul.article-list li,
+.page-wrapper article ol.article-list li{
+    margin-left: calc(5 * var(--medium));
+}
+.page-wrapper article ul.article-list li {
+    list-style: disc;
+}
+.page-wrapper article ol.article-list li{
+    list-style: lower-roman;
+}
 .page-wrapper .articles-grid {
     columns: 1;
     column-gap: var(--default);
@@ -246,13 +267,15 @@ body.halt-body{
     background-size: contain;
 }
 
-.page-wrapper .articles-grid article .article-link {
+.page-wrapper article .article-link {
     padding: var(--default);
     display: flex;
-    justify-content: flex-end;
+    justify-content: start;
 }
-
-.page-wrapper .articles-grid article .article-link a {
+.page-wrapper article .article-link.padding-top-bottom{
+    padding: var(--default) 0;
+}
+.page-wrapper article .article-link a {
     border: 3px solid var(--site-light-blue);
     padding: var(--medium);
     font-weight: 600;
@@ -266,16 +289,16 @@ body.halt-body{
 }
 
 @media (min-width: 768px) {
-    .page-wrapper .articles-grid article .article-link a {
-        width: initial;
+    .page-wrapper .article-link a {
+        width: initial !important;
     }
 }
 
-.page-wrapper .articles-grid article .article-link a:hover {
+.page-wrapper .article-link a:hover {
     color: var(--site-white);
 }
 
-.page-wrapper .articles-grid article .article-link a::before {
+.page-wrapper article .article-link a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -288,7 +311,7 @@ body.halt-body{
     z-index: -1;
 }
 
-.page-wrapper .articles-grid article .article-link a:hover:before {
+.page-wrapper article .article-link a:hover:before {
     opacity: 1;
     height: 100%;
 }
