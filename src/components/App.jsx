@@ -13,30 +13,34 @@ import Services from './Services.jsx';
 import SiteDisclaimer from './SiteDisclaimer.jsx';
 import TermsAndConditions from './TermsAndConditions.jsx';
 import { AnimatePresence } from 'framer-motion';
+import { HelmetProvider } from 'react-helmet-async';
 
 const App = () => {
 
   const location = useLocation();
+  const helmetContext = {};
 
   return (
     <>
-      <Header />
-      <AnimatePresence mode='wait' onExitComplete={true}>
-        <Routes key={location.path} location={location}>
-          <Route path='/' element={<Home />}/>
-          <Route path='/about' element={<About />}/>
-          <Route path='/contact' element={<Contact />}/>
-          <Route path='*' element={<FourOFour />}/>
-          <Route path='/privacy-policy' element={<PrivacyPolicy />}/>
-          <Route path='/products/:link' element={<ProductDescription />}/>
-          <Route path='/products' element={<Products />}/>
-          <Route path='/projects' element={<Projects />}/>
-          <Route path='/services' element={<Services />}/>
-          <Route path='/site-disclaimer' element={<SiteDisclaimer />}/>
-          <Route path='/terms-and-conditions' element={<TermsAndConditions />}/>
-        </Routes>
-      </AnimatePresence>
-      <Footer />
+      <HelmetProvider context={helmetContext}>
+        <Header />
+        <AnimatePresence mode='wait' onExitComplete={true}>
+          <Routes key={location.path} location={location}>
+            <Route path='/' element={<Home />}/>
+            <Route path='/about' element={<About />}/>
+            <Route path='/contact' element={<Contact />}/>
+            <Route path='*' element={<FourOFour />}/>
+            <Route path='/privacy-policy' element={<PrivacyPolicy />}/>
+            <Route path='/products/:link' element={<ProductDescription />}/>
+            <Route path='/products' element={<Products />}/>
+            <Route path='/projects' element={<Projects />}/>
+            <Route path='/services' element={<Services />}/>
+            <Route path='/site-disclaimer' element={<SiteDisclaimer />}/>
+            <Route path='/terms-and-conditions' element={<TermsAndConditions />}/>
+          </Routes>
+        </AnimatePresence>
+        <Footer />
+      </HelmetProvider>
     </>
   );
 }

@@ -3,9 +3,16 @@ import projects from "../assets/file/projects.json";
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
+import { Helmet } from "react-helmet-async";
 
 const Projects = () => {
     return(
+        <>
+        <Helmet>
+            <title>Cablemakers | Projects</title>
+            <meta name="description" content="HV Cable Projects completed and supplied by Cablemakers North Queensland"/>
+            <meta name="keywords" content="HV Cable Upgrades, Wikmar Sugar Mills, Sandfire resources, New Power Generation Plant, Cloncurry Mine, RAAF Base Townsville, Townsville, Hospital Expansion."/>
+        </Helmet>
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
             <div className="page-wrapper">
                 <div className="page-header projects-header" data-header-name="Projects">
@@ -25,6 +32,7 @@ const Projects = () => {
                 </div>
             </div>
         </motion.div>
+        </>
     );
 };
 

@@ -52,11 +52,32 @@ footer a::before{
     .top-footer .footer-content .footer-about,
     .top-footer .footer-content .footer-products,
     .top-footer .footer-content .footer-other-links {
-        max-width: 32.33%;
+        /* max-width: 32.33%; */
+    }
+
+    .top-footer .footer-content .footer-about{
+        max-width: 40%;
+    }
+    .top-footer .footer-content .footer-products{
+        max-width: 35%;
+    }
+    .top-footer .footer-content .footer-other-links{
+        max-width: 20%;
     }
 
     .top-footer .footer-content .footer-products h3 {
         text-align: center;
+    }
+}
+@media (min-width: 1336px){
+    .top-footer .footer-content .footer-about{
+        max-width: 40%;
+    }
+    .top-footer .footer-content .footer-products{
+        max-width: 40%;
+    }
+    .top-footer .footer-content .footer-other-links{
+        max-width: 18%;
     }
 }
 .top-footer .footer-links{

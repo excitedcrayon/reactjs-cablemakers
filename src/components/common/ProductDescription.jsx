@@ -1,5 +1,6 @@
 import { useParams, useLocation } from "react-router-dom";
 import  multiLineString from "../functions/GlobalFunctions";
+import { Helmet } from "react-helmet-async";
 
 const ProductDescription = () => {
 
@@ -7,7 +8,21 @@ const ProductDescription = () => {
     const product = useLocation();
     const data = product.state.product;
 
+    const removeBreakLine = (string) => {
+        return string.replace(/\n/g,' ');
+    }
+    const generateKeywordsFromString = (string) => {
+        let removeNewLine = string.replace(/\n/g, ' ');
+        return removeNewLine.replace(/\s+/g, ',');
+    }
+
     return (
+        <>
+        <Helmet>
+            <title>Cablemakers | Products - {data.name}</title>
+            <meta name="description" content={data.description && `Cablemakers Product ${removeBreakLine(data.description)}`}/>
+            <meta name="keywords" content={data.description && `Cablemakers, ${generateKeywordsFromString(data.description)}`}/>
+        </Helmet>
         <div className="page-wrapper">
             <div className="page-product-description-data">
                 {data.image != null 
@@ -192,6 +207,7 @@ const ProductDescription = () => {
                     : ""}
             </div>
         </div>
+        </>
     );
 }
 

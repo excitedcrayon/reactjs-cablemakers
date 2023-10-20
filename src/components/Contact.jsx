@@ -5,6 +5,7 @@ import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
 import BranchLocation from "./common/BranchLocation";
 import Toast from "./common/Toast";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
 
@@ -82,6 +83,11 @@ const Contact = () => {
 
     return(
         <>
+        <Helmet>
+            <title>Cablemakers | Contact</title>
+            <meta name="description" content="We have access to specialist manufacturers for all your cable requirements. Contact us today to find out more."/>
+            <meta name="keywords" content="Cable Makers North Queensland, cable, north brisbane, Online Quote Form"/>
+        </Helmet>
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
             <div className="page-wrapper">
                 <div className="page-header contact-header" data-header-name="Contact">

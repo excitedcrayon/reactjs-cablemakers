@@ -2,9 +2,16 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
+import { Helmet } from "react-helmet-async";
 
 const PrivacyPolicy = () => {
     return (
+        <>
+        <Helmet>
+            <title>Cablemakers | Privacy Policy</title>
+            <meta name="description" content="Cablemakers Privacy Policy"/>
+            <meta name="keywords" content="Cablemakers, Privacy, Policy, Privacy Policy"/>
+        </Helmet>
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
             <div className="page-wrapper">
                 <div className="page-header products-header" data-header-name="Privacy Policy">
@@ -87,6 +94,7 @@ const PrivacyPolicy = () => {
                 </div>
             </div>
         </motion.div>
+        </>
     )
 };
 

@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
+import { Helmet } from "react-helmet-async";
 
 const TermsAndConditions = () => {
     return (
+        <>
+        <Helmet>
+            <title>Cablemakers | Terms and Conditions</title>
+            <meta name="description" content="Cable Makers may vary the Conditions from time to time, and the Conditions as varied shall be published on the Cable Makers website. The purchaser agrees that the ordering of any goods or services after the publication of the variation of the Conditions on the website will be an acceptance by the purchaser of the varied Conditions."/>
+            <meta name="keywords" content="Cablemakers, general, precedence, acceptance, prices, terms of payment, delivery, goods returned for credit, cancellation, variation, warranties, inspection, risk, credit, packing, retention"/>
+        </Helmet>
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
             <div className="page-wrapper">
                 <div className="page-header products-header" data-header-name="Terms And Conditions">
@@ -139,6 +146,7 @@ const TermsAndConditions = () => {
                 </div>
             </div>
         </motion.div>
+        </>
     );
 };
 

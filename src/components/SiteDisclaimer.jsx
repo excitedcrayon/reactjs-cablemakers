@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
+import { Helmet } from "react-helmet-async";
 
 const SiteDisclaimer = () => {
     return (
+        <>
+        <Helmet>
+            <title>Cablemakers | Site Disclaimer</title>
+            <meta name="description" content="Cablemakers Site Disclaimer. Are you looking for a wide range of cable types from leading manufacturers? Do you need a reliable supplier who will get you what you want on time and within budget?"/>
+            <meta name="keywords" content="Cablemakers, site, disclaimer, supplying, purchase, bulk, manufacturers, direct distribution"/>
+        </Helmet>
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
             <div className="page-wrapper">
                 <div className="page-header products-header" data-header-name="Site Disclaimer">
@@ -17,6 +24,7 @@ const SiteDisclaimer = () => {
                 </div>
             </div>
         </motion.div>
+        </>
     );
 };
 

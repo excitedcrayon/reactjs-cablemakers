@@ -6,10 +6,17 @@ import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
 import Cablemakers from "../assets/models/Cablemakers";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
     
     return(
+        <>
+        <Helmet>
+            <title>Cablemakers | Home</title>
+            <meta name="description" content="Cablemakers brings quality cables to Aussies who need them the most"/>
+            <meta name="keywords" content="Cablemakers, North Queensland, mining, industrial, commerical, cable supplier, domestic, cutting machines, north, brisbane, XLPE/PVC Single, Building Wire, PVC SDI, PVC Flat, Orange Circ, Control, XLPE Aerial, FLexible COntrol, Instrumentation, Fire, Fire Instrument, Security, Speaker, Glands"/>
+        </Helmet>
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
         <div className="page-wrapper">
             <div className="page-banner" data-title="Use your mouse to click and rotate the 3D Text">
@@ -68,6 +75,7 @@ const Home = () => {
             </div>
         </div>
         </motion.div>
+        </>
     );
 }
 

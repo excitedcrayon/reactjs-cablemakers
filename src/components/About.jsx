@@ -3,9 +3,16 @@ import BusinessCard from "./common/BusinessCard";
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
     return(
+        <>
+        <Helmet>
+            <title>Cablemakers | About</title>
+            <meta name="description" content="Cablemakers North Queensland were established to address the ever increasing problem associated with supplying cable into areas other than capital cities."/>
+            <meta name="keywords" content="cable types, north queensland, developments, service, manufacturers, bulk, cut, distribute, north brisbane"/>
+        </Helmet>
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
             <div className="page-wrapper">
                 <div className="page-header about-header" data-header-name="About">
@@ -40,6 +47,7 @@ const About = () => {
                 </div>
             </div>
         </motion.div>
+        </>
     );
 };
 
