@@ -40,8 +40,8 @@ const Header = () => {
                         <li className="header-nav-link"><NavLink onClick={() => setActiveMenuIcon(false)} to='/products' className={({ isActive }) => (isActive ? 'active-link' : '')} title="Products" aria-label="Products Navigation Link">Products</NavLink></li>
                         <li className="header-nav-link"><NavLink onClick={() => setActiveMenuIcon(false)} to='/services' className={({ isActive }) => (isActive ? 'active-link' : '')} title="Services" aria-label="Services Navigation Link">Services</NavLink></li>
                         <li className="header-nav-link"><NavLink onClick={() => setActiveMenuIcon(false)} to='/projects' className={({ isActive }) => (isActive ? 'active-link' : '')} title="Projects" aria-label="Projects Navigation Link">Projects</NavLink></li>
-                        <li className="header-nav-link"><NavLink onClick={() => setActiveMenuIcon(false)} to='/about' className={({ isActive }) => (isActive ? 'active-link' : '')} title="About" aria-label="About Navigation Link">About</NavLink></li>
-                        <li className="header-nav-link"><NavLink onClick={() => setActiveMenuIcon(false)} to='/contact' className={({ isActive }) => (isActive ? 'active-link' : '')} title="Contact" aria-label="Contact Navigation Link">Contact</NavLink></li>
+                        <li className="header-nav-link"><NavLink onClick={() => setActiveMenuIcon(false)} to='/about-us' className={({ isActive }) => (isActive ? 'active-link' : '')} title="About" aria-label="About Navigation Link">About</NavLink></li>
+                        <li className="header-nav-link"><NavLink onClick={() => setActiveMenuIcon(false)} to='/contact-us' className={({ isActive }) => (isActive ? 'active-link' : '')} title="Contact" aria-label="Contact Navigation Link">Contact</NavLink></li>
                     </ul>
                 </nav>
             </div>

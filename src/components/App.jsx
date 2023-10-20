@@ -27,8 +27,8 @@ const App = () => {
         <AnimatePresence mode='wait' onExitComplete={true}>
           <Routes key={location.path} location={location}>
             <Route path='/' element={<Home />}/>
-            <Route path='/about' element={<About />}/>
-            <Route path='/contact' element={<Contact />}/>
+            <Route path='/about-us' element={<About />}/>
+            <Route path='/contact-us' element={<Contact />}/>
             <Route path='*' element={<FourOFour />}/>
             <Route path='/privacy-policy' element={<PrivacyPolicy />}/>
             <Route path='/products/:link' element={<ProductDescription />}/>
