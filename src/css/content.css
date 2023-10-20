@@ -225,15 +225,15 @@ body.halt-body{
 }
 
 .page-wrapper .articles-grid article .welcome-header-image::before {
-    background: url('../../welcome.jpg');
+    background: url('../../public/welcome.jpg');
 }
 
 .page-wrapper .articles-grid article .drum-header-image::before {
-    background: url('../../drum-it-in.jpg');
+    background: url('../../public/drum-it-in.jpg');
 }
 
 .page-wrapper .articles-grid article .locations-header-image::before {
-    background: url('../../locations.png');
+    background: url('../../public/locations.png');
 }
 
 .page-wrapper .articles-grid article p,
@@ -263,7 +263,7 @@ body.halt-body{
     width: var(--default);
     height: var(--default);
     transform: translateY(-50%);
-    background: url('../../icon-location.svg') no-repeat center;
+    background: url('../../public/icon-location.svg') no-repeat center;
     background-size: contain;
 }
 
@@ -625,11 +625,11 @@ body.halt-body{
 }
 
 .why-do-business::before {
-    background: url('../../business-with-us.jpeg');
+    background: url('../../public/business-with-us.jpeg');
 }
 
 .our-experience::before {
-    background: url('../../our-experience.png');
+    background: url('../../public/our-experience.png');
 }
 
 .article-header-image.sub-header-image h2 {
@@ -730,7 +730,7 @@ body.halt-body{
 }
 
 .contact-article-flex-half .contact-form-article .contact-us::before {
-    background: url('../../contact.jpg');
+    background: url('../../public/contact.jpg');
 }
 
 .contact-article-flex-half .contact-maps-article .contact-locations {

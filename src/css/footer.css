@@ -177,9 +177,9 @@ footer a::before{
 }
 
 .footer-socials .footer-social-icon a#facebook::before {
-    background: url('../../icons/icon-facebook.svg');
+    background: url('./../../public/icons/icon-facebook.svg');
 }
 
 .footer-socials .footer-social-icon a#linkedin::before {
-    background: url('../../icons/icon-linkedin.svg');
+    background: url('./../../public/icons/icon-linkedin.svg');
 }

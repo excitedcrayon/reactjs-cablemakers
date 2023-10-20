@@ -23,6 +23,15 @@ const Contact = () => {
 
     const [trigger, setTrigger] = useState(false);
 
+    const checkTriggerState = () => {
+        if(formData.name.trim() !== '' && formData.contact.trim() !== '' && formData.email.trim() !== '' && formData.enquiry.trim() !== ''){
+            setTrigger(true);
+        }else{
+            setTrigger(false);
+        }
+        return trigger;
+    };
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -53,11 +62,8 @@ const Contact = () => {
         }else{ validationErrors.enquiry = ""; }
 
         setErrors(validationErrors);
-    }
 
-    const sendEnquiryOnButtonClick = () => {
-        if(formData.name != '' && formData.contact != '' && formData.email != '' && formData.enquiry != ''){
-
+        if(trigger){
             let form = new FormData();
             form.append('name', formData.name);
             form.append('company', formData.company);
@@ -71,11 +77,10 @@ const Contact = () => {
             }).then((req) => req.json())
             .then((res) => {
                 if(res.success){
-                    setTrigger((trigger) => !trigger);
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 3000);
                 }
-                setTimeout(() => {
-                    window.location.reload();
-                }, 3000);
             })
             .catch((err) => console.log(err));
         }
@@ -128,7 +133,7 @@ const Contact = () => {
                                     {error.enquiry && <span className="form-error">{error.enquiry}</span>}
                                 </div>
                                 <div className="form-submit">
-                                    <button type="submit" title="Submit Form" aria-label="Submit button for the contact form" onClick={sendEnquiryOnButtonClick}>Submit</button>
+                                    <button type="submit" title="Submit Form" aria-label="Submit button for the contact form" onClick={checkTriggerState}>Submit</button>
                                 </div>
                             </form>
                         </div>
