@@ -37,6 +37,9 @@
     --site-white: #FFFFFF;
     --site-black: #222222;
 
+    --alert-success: #DDFFDD;
+    --alert-success-darker: #4CAF50;
+
     --transition-fastest: 0.2s;
     --transition-fast: 0.4s;
     --transition-medium: 0.5s;

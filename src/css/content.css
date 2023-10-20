@@ -987,3 +987,32 @@ body.halt-body{
 .product-attribute-row strong{
     font-weight: 600;
 }
+/* TOAST NOTIFICATION */
+.toast {
+    position: fixed;
+    bottom: calc(20% + var(--medium));
+    left: calc(2% + var(--miniscule));
+    min-width: 200px;
+    min-height: 50px;
+    z-index: 10000;
+    padding: var(--default);
+    font-weight: 600;
+    color: var(--alert-success-darker);
+    background: var(--alert-success);
+    border: 1px solid var(--alert-success-darker);
+    border-radius: var(--miniscule);
+    opacity: var(--opacity-none);
+    transform: translateX(-100%);
+    transform: var(--transition-medium) ease;
+    animation: showToast var(--transition-slow) ease 1 forwards;
+}
+@keyframes showToast{
+    0%{
+        opacity: var(--opacity-none);
+        transform: translateX(-100%); 
+    }
+    100%{
+        opacity: var(--opacity-full);
+        transform: translateX(0);
+    }
+}

@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import branchesData from "../assets/file/branches.json";
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
 import BranchLocation from "./common/BranchLocation";
+import Toast from "./common/Toast";
 
 const Contact = () => {
 
@@ -17,7 +18,9 @@ const Contact = () => {
         enquiry: '',
     });
 
-    const [error, setErrors] = useState({})
+    const [error, setErrors] = useState({});
+
+    const [trigger, setTrigger] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -30,33 +33,29 @@ const Contact = () => {
 
         e.preventDefault();
 
-        let formValid = true;
-
         const validationErrors = {}
 
         if(!formData.name.trim()){
             validationErrors.name = "Name is required";
-            formValid = false;
         }else{ validationErrors.name = ""; }
 
         if(!formData.contact.trim()){
             validationErrors.contact = "Contact number is required";
-            formValid = false;
         }else{ validationErrors.contact = ""; }
 
         if(!formData.email.trim()){
             validationErrors.email = "Email is required";
-            formValid = false;
         }else { validationErrors.email = ""; }
 
         if(!formData.enquiry.trim()){
             validationErrors.enquiry = "Your enquiry/comment is required";
-            formValid = false;
         }else{ validationErrors.enquiry = ""; }
 
         setErrors(validationErrors);
+    }
 
-        if(formValid){
+    const sendEnquiryOnButtonClick = () => {
+        if(formData.name != '' && formData.contact != '' && formData.email != '' && formData.enquiry != ''){
 
             let form = new FormData();
             form.append('name', formData.name);
@@ -69,12 +68,20 @@ const Contact = () => {
                 method: 'POST',
                 body: form,
             }).then((req) => req.json())
-            .then((res) => console.log(res))
+            .then((res) => {
+                if(res.success){
+                    setTrigger((trigger) => !trigger);
+                }
+                setTimeout(() => {
+                    window.location.reload();
+                }, 3000);
+            })
             .catch((err) => console.log(err));
         }
     }
 
     return(
+        <>
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
             <div className="page-wrapper">
                 <div className="page-header contact-header" data-header-name="Contact">
@@ -115,7 +122,7 @@ const Contact = () => {
                                     {error.enquiry && <span className="form-error">{error.enquiry}</span>}
                                 </div>
                                 <div className="form-submit">
-                                    <button type="submit" title="Submit Form" aria-label="Submit button for the contact form">Submit</button>
+                                    <button type="submit" title="Submit Form" aria-label="Submit button for the contact form" onClick={sendEnquiryOnButtonClick}>Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -132,6 +139,9 @@ const Contact = () => {
                 </div>
             </div>
         </motion.div>
+        {/* Show toast when email has been sent */}
+        {trigger && <Toast />}
+        </>
     );
 };
 

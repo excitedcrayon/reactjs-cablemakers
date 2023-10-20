@@ -18,27 +18,27 @@ const App = () => {
 
   const location = useLocation();
 
-    return (
-      <>
-        <Header />
-        <AnimatePresence mode='wait' onExitComplete={true}>
-          <Routes key={location.path} location={location}>
-            <Route path='/' element={<Home />}/>
-            <Route path='/about' element={<About />}/>
-            <Route path='/contact' element={<Contact />}/>
-            <Route path='*' element={<FourOFour />}/>
-            <Route path='/privacy-policy' element={<PrivacyPolicy />}/>
-            <Route path='/products/:link' element={<ProductDescription />}/>
-            <Route path='/products' element={<Products />}/>
-            <Route path='/projects' element={<Projects />}/>
-            <Route path='/services' element={<Services />}/>
-            <Route path='/site-disclaimer' element={<SiteDisclaimer />}/>
-            <Route path='/terms-and-conditions' element={<TermsAndConditions />}/>
-          </Routes>
-        </AnimatePresence>
-        <Footer />
-      </>
-    );
+  return (
+    <>
+      <Header />
+      <AnimatePresence mode='wait' onExitComplete={true}>
+        <Routes key={location.path} location={location}>
+          <Route path='/' element={<Home />}/>
+          <Route path='/about' element={<About />}/>
+          <Route path='/contact' element={<Contact />}/>
+          <Route path='*' element={<FourOFour />}/>
+          <Route path='/privacy-policy' element={<PrivacyPolicy />}/>
+          <Route path='/products/:link' element={<ProductDescription />}/>
+          <Route path='/products' element={<Products />}/>
+          <Route path='/projects' element={<Projects />}/>
+          <Route path='/services' element={<Services />}/>
+          <Route path='/site-disclaimer' element={<SiteDisclaimer />}/>
+          <Route path='/terms-and-conditions' element={<TermsAndConditions />}/>
+        </Routes>
+      </AnimatePresence>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
