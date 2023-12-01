@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import { OrbitControls } from "@react-three/drei"; 
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
+import Cablemakers from "../assets/models/Cablemakers";
 import { Helmet } from "react-helmet-async";
-import banner from "/public/banner.jpeg";
 
 const Home = () => {
     
@@ -15,11 +18,16 @@ const Home = () => {
             <meta name="keywords" content="Cablemakers, North Queensland, mining, industrial, commerical, cable supplier, domestic, cutting machines, north, brisbane, XLPE/PVC Single, Building Wire, PVC SDI, PVC Flat, Orange Circ, Control, XLPE Aerial, FLexible COntrol, Instrumentation, Fire, Fire Instrument, Security, Speaker, Glands"/>
         </Helmet>
         <motion.div initial="out" animate="in" exit="out" variants={pagevariant} transition={pagetransition}>
-        <div className="page-wrapper full-wrapper">
-            <div className="page-banner">
-                <div className="page-banner-image">
-                    <img src={banner} />
-                </div>
+        <div className="page-wrapper">
+            <div className="page-banner" data-title="Use your mouse to click and rotate the 3D Text">
+                <Canvas style={{ background: "#FFF" }} camera={{ fov: 10 }}>
+                    <directionalLight position={[10,15,10]} intensity={2} castShadow />
+                    <directionalLight position={[-10,-15,-5]} intensity={1} />
+                    <OrbitControls />
+                    <Suspense fallback={ null }>
+                        <Cablemakers />
+                    </Suspense>
+                </Canvas>
             </div>
             <div className="articles articles-grid">
                 <article>

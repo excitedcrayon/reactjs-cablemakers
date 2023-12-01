@@ -1,0 +1,10 @@
+Home Component
+
+<Canvas style={{ background: "#FFF" }} camera={{ fov: 10 }}>
+    <directionalLight position={[10,15,10]} intensity={2} castShadow />
+    <directionalLight position={[-10,-15,-5]} intensity={1} />
+    <OrbitControls />
+    <Suspense fallback={ null }>
+        <Cablemakers />
+    </Suspense>
+</Canvas>

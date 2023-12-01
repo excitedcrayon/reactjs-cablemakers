@@ -1,6 +1,7 @@
 import { NavLink} from "react-router-dom";
 import Breadcrumb from "../common/Breadcrumb";
 import { useEffect, useState } from "react";
+import cablemakerslogo from "/public/cablemakers-logo.png";
 
 const Header = () => {
 
@@ -24,8 +25,9 @@ const Header = () => {
                 <div className="header-logo">
                     <div id="logo">
                         <NavLink to='/' title="Cablemakers" aria-label="Cablemakers Logo for Homepage">
-                            <span className="logo-cable">Cable</span>
-                            <span className="logo-makers">Makers</span>
+                            {/* <span className="logo-cable">Cable</span>
+                            <span className="logo-makers">Makers</span> */}
+                            <img src={cablemakerslogo} alt="" />
                         </NavLink>
                         <div className={activeMenuIcon ? "header-menu-icon active-menu-icon" : "header-menu-icon"} onClick={toggleMenuIcon}>
                             <div className="menu-icon"></div>
