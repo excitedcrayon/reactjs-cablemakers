@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import branchesData from "../assets/file/branches.json";
+import branchesData from "../../public/data/branches.json";
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";
@@ -85,6 +85,10 @@ const Contact = () => {
             .catch((err) => console.log(err));
         }
     }
+
+    useEffect(() => {
+
+    },[branchesData])
 
     return(
         <>

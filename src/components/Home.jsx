@@ -49,7 +49,7 @@ const Home = () => {
                     </ul>
                     <p>Need any assistance, please don't hesitate to contact us.</p>
                     <div className="article-link">
-                        <Link to='/contact' title="Contact Us" aria-label="Contact Us Link">Contact Us</Link>
+                        <Link to='/contact-us' title="Contact Us" aria-label="Contact Us Link">Contact Us</Link>
                     </div>
                 </article>
                 <article>

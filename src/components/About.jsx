@@ -1,4 +1,4 @@
-import businessData from "../assets/file/businesses.json";
+import businessData from "../../public/data/businesses.json";
 import BusinessCard from "./common/BusinessCard";
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";

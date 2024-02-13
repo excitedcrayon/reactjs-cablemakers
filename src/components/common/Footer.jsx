@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import FooterProductLink from "./FooterProductLink";
-import products from "../../assets/file/products.json";
+import products from "../../../public/data/products.json";
 
 const Footer = () => {
     return (

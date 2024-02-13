@@ -1,5 +1,5 @@
 import ProductCard from "./common/ProductCard";
-import products from "../assets/file/products.json";
+import products from "../../public/data/products.json";
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";

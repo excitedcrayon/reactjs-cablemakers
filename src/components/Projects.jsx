@@ -1,5 +1,5 @@
 import ProjectCard from "./common/ProjectCard";
-import projects from "../assets/file/projects.json";
+import projects from "../../public/data/projects.json";
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
 import { pagetransition } from "../animation/PageTransition";

@@ -1,5 +1,5 @@
 import ServiceCard from "./common/ServiceCard";
-import serviceData from "../assets/file/services.json";
+import serviceData from "../../public/data/services.json";
 import serviceimage from "../assets/image/services.jpeg";
 import { motion } from "framer-motion";
 import { pagevariant } from "../animation/PageVariant";
