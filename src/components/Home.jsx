@@ -46,6 +46,7 @@ const Home = () => {
                         <li title="Cablemakers Townsville">Townsville</li>
                         <li title="Cablemakers Brisbane">Brisbane</li>
                         <li title="Cablemakers South Australia">South Australia</li>
+                        <li title="Cablemakers Perth">Perth</li>
                     </ul>
                     <p>Need any assistance, please don't hesitate to contact us.</p>
                     <div className="article-link">

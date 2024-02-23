@@ -23,6 +23,8 @@ const Contact = () => {
 
     const [trigger, setTrigger] = useState(false);
 
+    const [branchLocations, setBranchLocations] = useState({});
+
     const checkTriggerState = () => {
         if(formData.name.trim() !== '' && formData.contact.trim() !== '' && formData.email.trim() !== '' && formData.enquiry.trim() !== ''){
             setTrigger(true);
@@ -87,8 +89,8 @@ const Contact = () => {
     }
 
     useEffect(() => {
-
-    },[branchesData])
+        setBranchLocations(branchesData);
+    },[branchLocations])
 
     return(
         <>
